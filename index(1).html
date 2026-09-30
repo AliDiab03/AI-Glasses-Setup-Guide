@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Glasses Setup Guide – Fix Pairing &amp; Set Up Your Smart Glasses</title>
+<meta name="description" content="Free unofficial guide for Meta AI glasses owners. Fix pairing problems, follow a 5-step setup, and learn hands-free tips for Ray-Ban Meta and Oakley Meta. Download for Android.">
+<meta name="keywords" content="AI glasses setup, smart glasses pairing, Meta AI glasses help, Ray-Ban Meta setup, Oakley Meta guide, glasses won't pair, Hey Meta tips">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0B0C1A">
+<link rel="canonical" href="https://YOUR-DOMAIN.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AI Glasses Setup Guide – Fix Pairing &amp; Set Up Your Smart Glasses">
+<meta property="og:description" content="Step-by-step pairing fixes, setup checklist and hands-free tips for AI smart glasses. Free on Android.">
+<meta property="og:image" content="https://YOUR-DOMAIN.com/feature_graphic_1024x500.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="play_icon_512.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "AI Glasses Setup Guide",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "UtilitiesApplication",
+  "description": "Unofficial guide with pairing fixes, setup steps and tips for Meta AI glasses, including Ray-Ban Meta and Oakley Meta.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "downloadUrl": "https://play.google.com/store/apps/details?id=com.mohadev.metaaiglassesguide"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Why won't my AI glasses pair?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Update the Meta AI app, charge the glasses in their case, hold the case button for 5 seconds until the LED pulses blue, and pair from inside the app instead of phone Bluetooth settings." } },
+    { "@type": "Question", "name": "Do I need a Meta account?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. You can sign up with an email address, Facebook or Instagram." } },
+    { "@type": "Question", "name": "Can I use AI glasses without Wi-Fi?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Capturing photos and some voice controls work offline. Wi-Fi is needed for Meta AI, importing captures and updates." } },
+    { "@type": "Question", "name": "Will a restart delete my photos?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. A restart does not erase media you have not imported yet and does not unpair the glasses." } }
+  ]
+}
+</script>
+
+<style>
+  :root {
+    --ink: #0B0C1A;
+    --panel: #14152A;
+    --line: #2A2C4A;
+    --violet: #6C5CFF;
+    --cyan: #4DE8FF;
+    --text: #F3F1FF;
+    --muted: #A3A5C7;
+    --ok: #34D399;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--ink);
+    color: var(--text);
+    font-family: "DM Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3 { font-family: "Sora", "DM Sans", system-ui, sans-serif; line-height: 1.12; margin: 0; letter-spacing: -0.02em; }
+  a { color: var(--cyan); }
+  a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px solid var(--cyan); outline-offset: 3px; border-radius: 6px; }
+  .wrap { width: min(1120px, 100% - 40px); margin-inline: auto; }
+
+  /* header */
+  header.top { padding: 20px 0; }
+  header.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+  .brand { display: flex; align-items: center; gap: 12px; color: var(--text); text-decoration: none; font-family: "Sora", sans-serif; font-weight: 700; }
+  .brand img { width: 40px; height: 40px; border-radius: 10px; }
+  nav a { color: var(--muted); text-decoration: none; margin-left: 22px; font-size: 15px; }
+  nav a:hover { color: var(--text); }
+
+  /* hero */
+  .hero { padding: 48px 0 88px; }
+  .hero .wrap { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 56px; align-items: center; }
+  .hero h1 { font-size: clamp(2.4rem, 5.4vw, 4.1rem); font-weight: 800; }
+  .hero p.lead { color: var(--muted); font-size: 1.15rem; max-width: 34em; margin: 22px 0 32px; }
+  .cta-row { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: var(--violet); color: #fff; text-decoration: none; font-weight: 700;
+    padding: 15px 26px; border-radius: 14px; border: 0;
+    transition: transform .15s ease, background .15s ease;
+  }
+  .btn:hover { background: #7d6fff; transform: translateY(-2px); }
+  .btn.ghost { background: transparent; border: 1px solid var(--line); color: var(--text); }
+  .btn.ghost:hover { border-color: var(--cyan); background: transparent; }
+  .fine { color: var(--muted); font-size: 14px; margin-top: 18px; }
+
+  /* pairing console: the one memorable element */
+  .console {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 28px;
+    padding: 26px; position: relative; overflow: hidden;
+  }
+  .console::before {
+    content: ""; position: absolute; inset: -40% -20% auto auto; width: 320px; height: 320px;
+    background: radial-gradient(closest-side, rgba(108,92,255,.35), transparent); pointer-events: none;
+  }
+  .console-head { display: flex; align-items: center; gap: 14px; margin-bottom: 20px; position: relative; }
+  .led {
+    width: 14px; height: 14px; border-radius: 50%; background: #5b8dff;
+    box-shadow: 0 0 0 0 rgba(91,141,255,.7);
+    animation: pulse 1.8s ease-out infinite;
+  }
+  @keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(91,141,255,.75); }
+    70% { box-shadow: 0 0 0 16px rgba(91,141,255,0); }
+    100% { box-shadow: 0 0 0 0 rgba(91,141,255,0); }
+  }
+  .console-head strong { font-family: "Sora", sans-serif; font-size: 1.05rem; }
+  .console-head span.sub { color: var(--muted); font-size: 14px; display: block; font-weight: 400; }
+  .steps { list-style: none; margin: 0; padding: 0; position: relative; counter-reset: s; }
+  .steps li {
+    counter-increment: s; display: grid; grid-template-columns: 36px 1fr; gap: 14px;
+    padding: 13px 0; border-top: 1px solid var(--line);
+  }
+  .steps li::before {
+    content: counter(s); width: 36px; height: 36px; border-radius: 50%;
+    display: grid; place-items: center; font-family: "Sora", sans-serif; font-weight: 700; font-size: 15px;
+    background: #22234a; color: var(--cyan);
+  }
+  .steps li.hot::before { background: var(--violet); color: #fff; }
+  .steps b { display: block; font-weight: 700; }
+  .steps small { color: var(--muted); font-size: 14.5px; line-height: 1.45; display: block; }
+
+  /* sections */
+  section { padding: 80px 0; }
+  .sec-head { max-width: 640px; margin-bottom: 44px; }
+  .sec-head h2 { font-size: clamp(1.8rem, 3.6vw, 2.6rem); font-weight: 800; }
+  .sec-head p { color: var(--muted); margin: 14px 0 0; }
+
+  .problems { background: var(--panel); border-block: 1px solid var(--line); }
+  .problem-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 56px; }
+  .problem { padding: 20px 0; border-top: 1px solid var(--line); }
+  .problem h3 { font-size: 1.12rem; font-weight: 700; margin-bottom: 4px; }
+  .problem p { margin: 0; color: var(--muted); font-size: 15.5px; }
+
+  .inside-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .tile { padding: 22px; border: 1px solid var(--line); border-radius: 20px; background: var(--panel); }
+  .tile .ic { font-size: 28px; line-height: 1; margin-bottom: 14px; }
+  .tile h3 { font-size: 1.08rem; font-weight: 700; margin-bottom: 6px; }
+  .tile p { margin: 0; color: var(--muted); font-size: 15px; }
+  .tile.wide { grid-column: span 2; background: linear-gradient(135deg, #2A2470, #1a1b40); border-color: #3a3690; }
+
+  details { border-top: 1px solid var(--line); padding: 20px 0; max-width: 780px; }
+  details:last-of-type { border-bottom: 1px solid var(--line); }
+  summary { cursor: pointer; font-family: "Sora", sans-serif; font-weight: 700; font-size: 1.08rem; list-style: none; display: flex; justify-content: space-between; gap: 16px; }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "+"; color: var(--cyan); font-size: 1.4rem; line-height: 1; transition: transform .2s; }
+  details[open] summary::after { transform: rotate(45deg); }
+  details p { color: var(--muted); margin: 12px 0 0; }
+
+  .final { text-align: center; }
+  .final h2 { font-size: clamp(1.9rem, 4vw, 2.9rem); font-weight: 800; max-width: 18em; margin: 0 auto 18px; }
+  .final p { color: var(--muted); max-width: 34em; margin: 0 auto 30px; }
+
+  footer { border-top: 1px solid var(--line); padding: 40px 0 56px; color: var(--muted); font-size: 14.5px; }
+  footer .wrap { display: grid; gap: 14px; }
+  footer .links a { margin-right: 20px; }
+  .disclaimer { max-width: 760px; }
+
+  @media (max-width: 860px) {
+    .hero .wrap { grid-template-columns: 1fr; gap: 40px; }
+    .problem-list { grid-template-columns: 1fr; }
+    .inside-grid { grid-template-columns: 1fr 1fr; }
+    .tile.wide { grid-column: span 2; }
+    nav { display: none; }
+    section { padding: 60px 0; }
+  }
+  @media (max-width: 520px) {
+    .inside-grid { grid-template-columns: 1fr; }
+    .tile.wide { grid-column: auto; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .led { animation: none; }
+    html { scroll-behavior: auto; }
+    .btn { transition: none; }
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="play_icon_512.png" alt="" width="40" height="40"> AI Glasses Setup Guide</a>
+    <nav aria-label="Main">
+      <a href="#fixes">Pairing fixes</a>
+      <a href="#inside">What's inside</a>
+      <a href="#faq">FAQ</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Glasses won't pair? Fix it in about five minutes.</h1>
+        <p class="lead">A clear, step-by-step guide for owners of Meta AI glasses, including Ray-Ban Meta and Oakley Meta. Pair your glasses, fix connection problems, and learn the hands-free tricks that make them worth wearing.</p>
+        <div class="cta-row">
+          <a class="btn" href="https://play.google.com/store/apps/details?id=com.mohadev.metaaiglassesguide">Get it on Google Play</a>
+          <a class="btn ghost" href="#fixes">See the fixes</a>
+        </div>
+        <p class="fine">Free for Android 7.0+. Unofficial app, not affiliated with Meta.</p>
+      </div>
+
+      <aside class="console" aria-label="Preview of the 5-step pairing guide">
+        <div class="console-head">
+          <span class="led" aria-hidden="true"></span>
+          <strong>Pair from the Meta AI app<span class="sub">Always start inside the app, not phone Bluetooth settings</span></strong>
+        </div>
+        <ol class="steps">
+          <li><div><b>Charge the glasses</b><small>At least an hour in the case, until the case LED is green.</small></div></li>
+          <li><div><b>Update and open Meta AI</b><small>Install the latest version and log in.</small></div></li>
+          <li><div><b>Turn on Bluetooth and Wi-Fi</b><small>Both are needed for pairing and updates.</small></div></li>
+          <li class="hot"><div><b>Enter pairing mode</b><small>Hold the case button 5 seconds until the LED pulses blue.</small></div></li>
+          <li><div><b>Finish in the app</b><small>Your glasses can take up to 10 seconds to appear.</small></div></li>
+        </ol>
+      </aside>
+    </div>
+  </div>
+
+  <section class="problems" id="fixes">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>The problems owners hit most, solved</h2>
+        <p>Every fix in the app is written as a short checklist you can follow with the glasses in your hand.</p>
+      </div>
+      <div class="problem-list">
+        <div class="problem"><h3>The app can't find my glasses</h3><p>Check pairing mode, app permissions and Bluetooth, then try again.</p></div>
+        <div class="problem"><h3>Already linked to another account</h3><p>Glasses pair with one Meta account at a time. Here's how to move them.</p></div>
+        <div class="problem"><h3>Pairing stalls halfway</h3><p>Wait about 45 seconds after placing the glasses in the case, then retry.</p></div>
+        <div class="problem"><h3>The LED keeps blinking white</h3><p>A force restart usually clears it and won't delete your captures.</p></div>
+        <div class="problem"><h3>Won't reconnect after a restart</h3><p>Give it a few minutes. If not, unpair and pair again.</p></div>
+        <div class="problem"><h3>Switching to a new phone</h3><p>Unpair from the old phone first, then pair on the new one.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="inside">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Everything you need, in one place</h2>
+        <p>Nine focused sections, written in plain language and readable in seconds.</p>
+      </div>
+      <div class="inside-grid">
+        <div class="tile wide"><div class="ic">🚑</div><h3>Won't Pair checklist</h3><p>Try-in-order troubleshooting. Most issues clear by step four.</p></div>
+        <div class="tile"><div class="ic">🔗</div><h3>Connect</h3><p>Pair in five steps.</p></div>
+        <div class="tile"><div class="ic">📋</div><h3>Compatibility</h3><p>Phone, account, Wi-Fi and Bluetooth requirements.</p></div>
+        <div class="tile"><div class="ic">✅</div><h3>Setup checklist</h3><p>Unbox, pair, set up "Hey Meta", update firmware.</p></div>
+        <div class="tile"><div class="ic">💡</div><h3>Hands-free tips</h3><p>Live translation, music, calls, messages, battery.</p></div>
+        <div class="tile"><div class="ic">❓</div><h3>FAQ</h3><p>Quick answers to common questions.</p></div>
+        <div class="tile"><div class="ic">⚖️</div><h3>Compare models</h3><p>Ray-Ban Meta, Oakley Meta and Meta Ray-Ban Display.</p></div>
+        <div class="tile"><div class="ic">🛒</div><h3>Buying tips</h3><p>Warranty, authorized sellers and what to check first.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head"><h2>Quick answers</h2></div>
+      <details><summary>Why won't my AI glasses pair?</summary><p>Update the Meta AI app, charge the glasses in their case, hold the case button for 5 seconds until the LED pulses blue, and pair from inside the app rather than phone Bluetooth settings.</p></details>
+      <details><summary>Do I need a Meta account?</summary><p>Yes. You can sign up with an email address, Facebook or Instagram.</p></details>
+      <details><summary>Can I use the glasses without Wi-Fi?</summary><p>Capturing photos and some voice controls work offline. Wi-Fi is needed for Meta AI, importing captures and updates.</p></details>
+      <details><summary>Will a restart delete my photos?</summary><p>No. A restart does not erase media you haven't imported and does not unpair the glasses.</p></details>
+      <details><summary>Can I add more than one pair of glasses?</summary><p>Yes. The Meta AI app supports multiple devices.</p></details>
+      <details><summary>Is this the official Meta app?</summary><p>No. AI Glasses Setup Guide is an independent, unofficial guide. It is not affiliated with, endorsed by, or sponsored by Meta.</p></details>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="wrap">
+      <h2>Get your glasses connected and start using them</h2>
+      <p>Free to download, nothing to sign up for. Keep the guide on your phone for the next time something stops working.</p>
+      <a class="btn" href="https://play.google.com/store/apps/details?id=com.mohadev.metaaiglassesguide">Get it on Google Play</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="links"><a href="privacy.html">Privacy Policy</a><a href="mailto:YOUR-EMAIL@example.com">Contact</a></div>
+    <p class="disclaimer">Disclaimer: AI Glasses Setup Guide is an unofficial app. It is not affiliated with, endorsed by, or sponsored by Meta Platforms, Ray-Ban, Oakley or EssilorLuxottica. All product names and trademarks are the property of their respective owners and are used only to describe compatibility. Information is for guidance only.</p>
+    <p>© 2026 AI Glasses Setup Guide. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
